@@ -1,8 +1,7 @@
 $(document).ready(function(){
-<<<<<<< HEAD
+	
 	$("p").addClass("uppg3class");
-	$
-=======
+	
 	$("p").addClass("intro");
 	var uppg4width = $("#uppg4-box").width();
 	var uppg4height = $("#uppg4-box").height();
@@ -10,8 +9,13 @@ $(document).ready(function(){
 	$("#uppg4-box").html("<p>bredd: " + uppg4width + " px</p><p>höjd: " + uppg4height + " px</p>");
 	//$("#uppg4-box").heigth();
 	$("#uppg5-box").show('slow');
-	$("#show").click(function(){
-    $("#uppg6-box").show();
+	$("#uppg6-btn").click(function(){
+    $("#uppg6-box").addClass('uppg6-class');
+	});
+	$("#uppg7-btn").click(function(){
+    $("#uppg7-box").animate({
+		width: '+=100px'
+	},1000);
+	
 });
->>>>>>> 497e8eb0f69fe59ae6188b28dd22045f21d91f58
 });
